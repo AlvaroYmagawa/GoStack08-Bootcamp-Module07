@@ -1,4 +1,4 @@
-## 1. To run this project, first run yarn in te project root to install all dependences
+## 1. To run this project, first run yarn in the project root to install all dependences
 ```
 yarn
 ```
