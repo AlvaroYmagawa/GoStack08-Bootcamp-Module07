@@ -12,6 +12,7 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -21,7 +22,8 @@ module.exports = {
   },
   plugins: [
     'react',
-    'prettier'
+    'prettier',
+    'react-hooks'
   ],
   rules: {
     'prettier/prettier': 'error',
@@ -30,6 +32,10 @@ module.exports = {
       { extensions: ['.jsx', '.js'] }
     ],
     'import/prefer-default-export': 'off',
-    'no-param-reassign': 'off'
+    'no-param-reassing': 'off',
+    'no-console': ['error', { allow: ['tron'] }],
+
+    'react-hooks/rules-of-hooks:': 'off',
+    'react-hooks/exhaustive-deps': 'warn'
   },
 };
